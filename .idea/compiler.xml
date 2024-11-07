@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="car" />
+        <module name="client" />
+        <module name="gateway" />
+      </profile>
+      <profile name="Annotation profile for server_eureka" enabled="true">
+        <sourceOutputDir name="../../ms_rest_template-main/server_eureka/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../ms_rest_template-main/server_eureka/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="servereureka" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="servereureka" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="car" options="-parameters" />
+      <module name="client" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="servereureka" options="-parameters" />
+    </option>
+  </component>
+</project>
